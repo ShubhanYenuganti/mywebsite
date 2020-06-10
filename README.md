@@ -1,2 +1,2 @@
 # mywebsite
-My first attempt at creating a website
+My personal website
