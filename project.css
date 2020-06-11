@@ -1,0 +1,233 @@
+/* Body */
+body {
+  width:2400px;
+  height:500px;
+  margin: 0;
+  background-color: #5CDB95;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 500px) {
+   body {
+      width:420px;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   body {
+      width:720px;
+   }
+}
+
+
+/* Styling nav bar */
+.topnav {
+  background-color: #5CDB95; 
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #05386B;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Header */
+.header {
+  position: relative;
+  left: 300px;
+  padding-bottom: 20px;
+  color: #EDF5E1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  display: block;
+  text-align: center; 
+}
+
+/* Header h1 */
+.h1 {
+  position: static;
+  text-align: center;
+}
+
+/* Header animation */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+} 
+body {
+  background: #5CDB95;
+}
+
+.text1 {
+  color: #EDF5E1;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 0px;
+  background: #5CDB95;
+  position: relative;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0%{
+      color: #5CDB95;
+      margin-bottom: -40px;
+  }
+  30% {
+      letter-spacing: 25px;
+      margin-bottom: -40px;
+  } 
+  85% {
+      letter-spacing: 8px;
+  }
+}
+
+/*Footer w/animation*/
+
+.middle {
+  position: absolute;
+  top: 8%;
+  left: 42%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin:10px; 
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+
+.btn i {
+  line-height: 80px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.btn:hover i{
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.btn:hover::before {
+  animation: aaa 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes aaa {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.panel {
+  background-color: #5CDB95;
+  color: #EDF5E1;
+  width: 300px;
+  padding: 15px;
+}
+.panel:hover {
+  transform: translateY(-10px);
+  background-color: rgba(5, 56, 107, 0.452);
+}
+.h1 {
+  padding: 15px;
+}
+
+.panel1 {
+  padding: 30px;
+  position: relative;
+  left: 50px;
+}
+
+.panel2 {
+  padding: 30px;
+  position: relative;
+  left: 200px;
+}
+
+.panel3 {
+  padding: 30px;
+  position: relative;
+  left: 350px;
+}
+
+.panel4 {
+  padding: 30px;
+  position: relative;
+  left: 500px;
+}
+
+.p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+a.a {
+  color: #EDF5E1
+}
+.a:hover {
+  color: #05386B;
+}
