@@ -8,9 +8,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-      img {
-          width: 100%;
+
+      * {
+        box-sizing: border-box;
       }
+
+      .row::after{
+        content: "";
+        clear:both;
+        display: table;
+      }
+
+      [class*="col-"] {
+        float:  left;
+        padding: 15px;
+        position: relative;
+        top: 150px;
+      }
+
+      .battleship {
+        padding-left: 15px;
+      }
+
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
 </style>
 </head>
 <body>
@@ -25,8 +56,9 @@
 
 <!--Header-->
 <div class = "header">
-  <span class = "text1">My Projects</span>
+  <h1>My Projects</h1>
 </div>
+
 
 <footer>
   <div class = "middle">
@@ -40,51 +72,37 @@
 </footer>
 
 <div class="row">
-  <div class="column">
-    <div class = "panel1">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <div class = "battleship">
-          <h1 class = "h1">Java Battleship Project</h1>
-          <p class = "p">Battleship game I made from sratch using Java. <br>Click <a href="https://github.com/ShubhanYenuganti/Battleship" target = "_blank" style = "text-decoration: none" class = "a">here</a>  to view it on my Github page.</br></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class = "panel2">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h1 class = "h1" >Website Project</h1>
-            <p class = "p">This is the website I have created from scratch. <br>Click <a href="https://github.com/ShubhanYenuganti/mywebsite"  target = "_blank" style = "text-decoration: none" class = "a">here</a>
-              to view the code on my Github page.</br>
-            </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class = "panel3">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h1 class = "h1">Java Weather App Project</h1>
-          <p class = "p">A Weather App made using React. <br>Click <a href="https://github.com/ShubhanYenuganti/weatherapp" target = "_blank" style = "text-decoration: none" class = "a">here</a>  to view it on my Github page.</br></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="column">
-    <div class = "panel4">
-      <div class="panel panel-default">
-        <div class="panel-body">
-          <h1 class = "h1" >Covid Stats App</h1>
-          <p class = "p">A Covid interactive application that returns statistics. <br>Click <a href="https://github.com/ShubhanYenuganti/covid" target = "_blank" style = "text-decoration: none" class = "a">here</a>  to view it on my Github page.</br></p>
-        </div>
-      </div>
-    </div>
+
+<div class = "col-3">
+  <div class = "battleship">
+    <h1 class = "h1">Java Battleship Project</h1>
+    <p class = "p">Battleship game I made from sratch using Java. <br>Click <a href="https://github.com/ShubhanYenuganti/Battleship" target = "_blank" style = "text-decoration: none" class = "a">here</a>  to view it on my Github page.</br></p>
   </div>
 </div>
+
+<div class = "col-3">
+  <div class="website">
+    <h1 class = "h1" >Website Project</h1>
+      <p class = "p">This is the website I have created from scratch. <br>Click <a href="https://github.com/ShubhanYenuganti/mywebsite"  target = "_blank" style = "text-decoration: none" class = "a">here</a>
+        to view the code on my Github page.</br>
+      </p>
+  </div>
+</div>
+
+<div class = "col-3">
+  <div class="weatherapp">
+    <h1 class = "h1">Java Weather App Project</h1>
+    <p class = "p">A Weather App made using React. <br>Click <a href="https://github.com/ShubhanYenuganti/weatherapp" target = "_blank" style = "text-decoration: none" class = "a">here</a>  to view it on my Github page.</br></p>
+  </div>
+</div>
+
+<div class = "col-3">
+  <div class="covid-app">
+    <h1 class = "h1" >Covid Stats App</h1>
+    <p class = "p">A Covid interactive application that returns statistics. <br>Click <a href="https://github.com/ShubhanYenuganti/covid" target = "_blank" style = "text-decoration: none" class = "a">here</a>  to view it on my Github page.</br></p>
+  </div>
+</div>
+ 
 
 
 </body>
