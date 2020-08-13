@@ -851,3 +851,633 @@ body {
    }
  }
 }
+
+
+/* Body for Galaxy S5 */
+
+@media screen and (width: 360px) and (height: 640px) {
+  body {
+     width: 360px;
+     height: 640px;
+  }
+}
+
+/* NavBar for Galaxy S5 */
+
+@media screen and (width: 360px) and (height: 640px) {
+ .topnav {
+    width: 360px;
+    height: 640px;
+ }
+}
+
+/* Header for Galaxy S5 */
+
+@media screen and (width: 360px) and (height: 640px) {
+ .header {
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   border-bottom: 5px solid #fff;
+   overflow: hidden;
+   box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+   animation: reveal 2s linear forwards;
+ }
+ .header h1 {
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+   text-transform: uppercase;
+   display: block;
+   color: #f1f1f1;
+   font-size: 3em;
+   text-shadow: 2px 2px 2px rgbpa(0,0,0,.5);
+   text-transform: uppercase;
+ }
+ @keyframes reveal
+ {
+     0% {
+       width: 0px;
+       height: 0px;
+     }
+     30% {
+       width: 250px;
+       height: 0px;
+     }
+     60% {
+       width: 250px;
+       height: 50px;
+     }
+     80% {
+       width: 250px;
+       height: 100px;
+       box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+
+     }
+     100% {
+       width: 250px;
+       height: 150px;
+       box-shadow: 0px 5px 0px rgba (0,0,0,.5);
+     }
+ }
+
+}
+
+/* Footer for Galaxy S5 */
+
+@media screen and (width: 360px) and (height:640px) {
+ .middle {
+   position: absolute;
+   top: 50%;
+   left: 1%;
+   transform: translateY(-50%);
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .btn {
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   background: #f1f1f1;
+   margin:10px; 
+   border-radius: 30%;
+   box-shadow: 0 5px 15px -5px #00000070;
+   color: #3498db;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ .btn i {
+   line-height: 70px;
+   font-size: 26px;
+   transition: 0.2s linear;
+ }
+ 
+ .btn:hover i{
+   transform: scale(1.3);
+   color: #f1f1f1;
+ }
+ 
+ .btn::before {
+   content: "";
+   position: absolute;
+   width: 120%;
+   height: 120%;
+   background: #3498db;
+   transform: rotate(45deg);
+   left: -110%;
+   top: 90%;
+ }
+ 
+ .btn:hover::before {
+   animation: aaa 0.7s 1;
+   top: -10%;
+   left: -10%;
+ }
+ 
+ @keyframes aaa {
+   0% {
+     left: -110%;
+     top: 90%;
+   }
+   50% {
+     left: 10%;
+     top: -30%;
+   }
+   100% {
+     top: -10%;
+     left: -10%;
+   }
+ }
+}
+
+/* Body for Pixel 2 */
+
+@media screen and (width: 411px) and (height: 731px) {
+  body {
+     width: 411px;
+     height: 731px;
+  }
+}
+
+/* NavBar for Pixel 2 */
+
+@media screen and (width: 411px) and (height: 731px) {
+ .topnav {
+    width: 411px;
+    height: 731px;
+ }
+}
+
+/* Header for Pixel 2 */
+
+@media screen and (width: 411px) and (height: 731px) {
+ .header {
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   border-bottom: 5px solid #fff;
+   overflow: hidden;
+   box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+   animation: reveal 2s linear forwards;
+ }
+ .header h1 {
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+   text-transform: uppercase;
+   display: block;
+   color: #f1f1f1;
+   font-size: 3em;
+   text-shadow: 2px 2px 2px rgbpa(0,0,0,.5);
+   text-transform: uppercase;
+ }
+ @keyframes reveal
+ {
+     0% {
+       width: 0px;
+       height: 0px;
+     }
+     30% {
+       width: 250px;
+       height: 0px;
+     }
+     60% {
+       width: 250px;
+       height: 50px;
+     }
+     80% {
+       width: 250px;
+       height: 100px;
+       box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+
+     }
+     100% {
+       width: 250px;
+       height: 150px;
+       box-shadow: 0px 5px 0px rgba (0,0,0,.5);
+     }
+ }
+
+}
+
+/* Footer for Pixel 2 */
+
+@media screen and (width: 411px) and (height:731px) {
+ .middle {
+   position: absolute;
+   top: 50%;
+   left: 1%;
+   transform: translateY(-50%);
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .btn {
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   background: #f1f1f1;
+   margin:10px; 
+   border-radius: 30%;
+   box-shadow: 0 5px 15px -5px #00000070;
+   color: #3498db;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ .btn i {
+   line-height: 70px;
+   font-size: 26px;
+   transition: 0.2s linear;
+ }
+ 
+ .btn:hover i{
+   transform: scale(1.3);
+   color: #f1f1f1;
+ }
+ 
+ .btn::before {
+   content: "";
+   position: absolute;
+   width: 120%;
+   height: 120%;
+   background: #3498db;
+   transform: rotate(45deg);
+   left: -110%;
+   top: 90%;
+ }
+ 
+ .btn:hover::before {
+   animation: aaa 0.7s 1;
+   top: -10%;
+   left: -10%;
+ }
+ 
+ @keyframes aaa {
+   0% {
+     left: -110%;
+     top: 90%;
+   }
+   50% {
+     left: 10%;
+     top: -30%;
+   }
+   100% {
+     top: -10%;
+     left: -10%;
+   }
+ }
+}
+
+/* Body for IPAD */
+
+@media screen and (width: 768px) and (height: 1024px) {
+  body {
+     width: 768px;
+     height: 1024px;
+  }
+}
+
+/* NavBar for iPAD */
+
+@media screen and (width: 768px) and (height: 1024px) {
+ .topnav {
+    width: 768px;
+    height: 1024px;
+ }
+}
+
+/* Header for iPAD */
+
+@media screen and (width: 768px) and (height: 1024) {
+ .header {
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   border-bottom: 5px solid #fff;
+   overflow: hidden;
+   box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+   animation: reveal 2s linear forwards;
+ }
+ .header h1 {
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+   text-transform: uppercase;
+   display: block;
+   color: #f1f1f1;
+   font-size: 3em;
+   text-shadow: 2px 2px 2px rgbpa(0,0,0,.5);
+   text-transform: uppercase;
+ }
+ @keyframes reveal
+ {
+     0% {
+       width: 0px;
+       height: 0px;
+     }
+     30% {
+       width: 250px;
+       height: 0px;
+     }
+     60% {
+       width: 250px;
+       height: 50px;
+     }
+     80% {
+       width: 250px;
+       height: 100px;
+       box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+
+     }
+     100% {
+       width: 250px;
+       height: 150px;
+       box-shadow: 0px 5px 0px rgba (0,0,0,.5);
+     }
+ }
+
+}
+
+/* Footer for IPAD */
+
+@media screen and (width: 768px) and (height:1024px) {
+ .middle {
+   position: absolute;
+   top: 50%;
+   left: 1%;
+   transform: translateY(-50%);
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .btn {
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   background: #f1f1f1;
+   margin:10px; 
+   border-radius: 30%;
+   box-shadow: 0 5px 15px -5px #00000070;
+   color: #3498db;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ .btn i {
+   line-height: 70px;
+   font-size: 26px;
+   transition: 0.2s linear;
+ }
+ 
+ .btn:hover i{
+   transform: scale(1.3);
+   color: #f1f1f1;
+ }
+ 
+ .btn::before {
+   content: "";
+   position: absolute;
+   width: 120%;
+   height: 120%;
+   background: #3498db;
+   transform: rotate(45deg);
+   left: -110%;
+   top: 90%;
+ }
+ 
+ .btn:hover::before {
+   animation: aaa 0.7s 1;
+   top: -10%;
+   left: -10%;
+ }
+ 
+ @keyframes aaa {
+   0% {
+     left: -110%;
+     top: 90%;
+   }
+   50% {
+     left: 10%;
+     top: -30%;
+   }
+   100% {
+     top: -10%;
+     left: -10%;
+   }
+ }
+}
+
+/* Footer for IPAD Pro*/
+
+@media screen and (width: 1024px) and (height:1366px) {
+ .middle {
+   position: absolute;
+   top: 50%;
+   left: 1%;
+   transform: translateY(-50%);
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .btn {
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   background: #f1f1f1;
+   margin:10px; 
+   border-radius: 30%;
+   box-shadow: 0 5px 15px -5px #00000070;
+   color: #3498db;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ .btn i {
+   line-height: 70px;
+   font-size: 26px;
+   transition: 0.2s linear;
+ }
+ 
+ .btn:hover i{
+   transform: scale(1.3);
+   color: #f1f1f1;
+ }
+ 
+ .btn::before {
+   content: "";
+   position: absolute;
+   width: 120%;
+   height: 120%;
+   background: #3498db;
+   transform: rotate(45deg);
+   left: -110%;
+   top: 90%;
+ }
+ 
+ .btn:hover::before {
+   animation: aaa 0.7s 1;
+   top: -10%;
+   left: -10%;
+ }
+ 
+ @keyframes aaa {
+   0% {
+     left: -110%;
+     top: 90%;
+   }
+   50% {
+     left: 10%;
+     top: -30%;
+   }
+   100% {
+     top: -10%;
+     left: -10%;
+   }
+ }
+}
+
+/* Body for Surface Duo */
+
+@media screen and (width: 450px) and (height: 600px) {
+  body {
+     width: 450px;
+     height: 600px;
+  }
+}
+
+/* NavBar for Surface Duo */
+
+@media screen and (width: 450px) and (height: 600px) {
+ .topnav {
+    width: 450px;
+    height: 600px;
+ }
+}
+
+/* Header for Surface Duo */
+
+@media screen and (width: 450px) and (height: 600px) {
+ .header {
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   border-bottom: 5px solid #fff;
+   overflow: hidden;
+   box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+   animation: reveal 2s linear forwards;
+ }
+ .header h1 {
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+   text-transform: uppercase;
+   display: block;
+   color: #f1f1f1;
+   font-size: 3em;
+   text-shadow: 2px 2px 2px rgbpa(0,0,0,.5);
+   text-transform: uppercase;
+ }
+ @keyframes reveal
+ {
+     0% {
+       width: 0px;
+       height: 0px;
+     }
+     30% {
+       width: 250px;
+       height: 0px;
+     }
+     60% {
+       width: 250px;
+       height: 50px;
+     }
+     80% {
+       width: 250px;
+       height: 100px;
+       box-shadow: 0px 1px 0px rgba (0,0,0,.5);
+
+     }
+     100% {
+       width: 250px;
+       height: 150px;
+       box-shadow: 0px 5px 0px rgba (0,0,0,.5);
+     }
+ }
+
+}
+
+/* Footer for Surface Duo */
+
+@media screen and (width: 450px) and (height:600px) {
+ .middle {
+   position: absolute;
+   top: 50%;
+   left: 1%;
+   transform: translateY(-50%);
+   width: 100%;
+   text-align: center;
+ }
+ 
+ .btn {
+   display: inline-block;
+   width: 70px;
+   height: 70px;
+   background: #f1f1f1;
+   margin:10px; 
+   border-radius: 30%;
+   box-shadow: 0 5px 15px -5px #00000070;
+   color: #3498db;
+   overflow: hidden;
+   position: relative;
+ }
+ 
+ .btn i {
+   line-height: 70px;
+   font-size: 26px;
+   transition: 0.2s linear;
+ }
+ 
+ .btn:hover i{
+   transform: scale(1.3);
+   color: #f1f1f1;
+ }
+ 
+ .btn::before {
+   content: "";
+   position: absolute;
+   width: 120%;
+   height: 120%;
+   background: #3498db;
+   transform: rotate(45deg);
+   left: -110%;
+   top: 90%;
+ }
+ 
+ .btn:hover::before {
+   animation: aaa 0.7s 1;
+   top: -10%;
+   left: -10%;
+ }
+ 
+ @keyframes aaa {
+   0% {
+     left: -110%;
+     top: 90%;
+   }
+   50% {
+     left: 10%;
+     top: -30%;
+   }
+   100% {
+     top: -10%;
+     left: -10%;
+   }
+ }
+}
