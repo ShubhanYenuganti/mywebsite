@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Shubhan's Website</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <title>
+      Shubhan's Website
+    </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="about.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
+    <style>
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .row::after{
+        content: "";
+        clear:both;
+        display: table;
+      }
+
+      [class*="col-"] {
+        float:  left;
+        padding: 15px;
+        position: relative;
+        top: 150px;
+      }
+
+      .image_segment {
+        position: relative;
+        right: -11px;
+      }
+
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+    </style>
+  </head>
 <body>
 
 <!--Navigator-->
-    
 <div class = "topnav">
   <a href = "home.html">Home</a>
   <a href="about.html" href>About Me</a>
@@ -20,7 +58,7 @@
 
 <!--Header-->
 <div class = "header">
-  <span class = "text1">About Me</span>
+  <h1>About Me</h1>
 </div>
 
 <footer>
@@ -34,23 +72,31 @@
   </div>
 </footer>
 
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h1 class = "h3_bio">Bio</h1>
-      <p class = "p_bio">I'm a sophmore in Lynbrook High School. I'm experienced in Java, Python and Web Development. <br>I enjoy playing basketball in my freetime and am a huge fan of bay area sports.<br> #DubNation <br> #Bang Bang Niner Gang </br></br></p>
-    </div>
-    <div class="col-sm-4">
-      <div class = "image">
-        <img src="IMG_7641.jpg" alt="Italian Trulli" style="width:400px;height:400px;" class = "img-circle">
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <h1 class = "h3_education">Education</h1>
-      <p class = "p_education">I'm experienced in Java, Python, and Web Development softwares such as Node.js. I'm also currently learning about React.JS.</p>
-    </div>
+<div class = "row">
+
+<!-- Content -->
+<div class = "col-5">
+  <div class="bio"> 
+    <h1 class = "h3_bio">Bio</h1>
+      <p class = "p_bio">I'm a sophmore in Lynbrook High School. I'm experienced in Java, Python and Web Development. <br>I enjoy playing basketball in my freetime and am a huge fan of bay area sports.</br></p>
   </div>
 </div>
+  <div class = "col-3">
+    <div class="image_segment">
+      <div class = "image">
+        <img src="IMG_7641.jpg" alt="Italian Trulli" class = "img-circle" width="300" height="300">
+      </div>
+    </div>
+  </div>
+<div class = "col-4">
+  <div class="edu">
+    <h1 class = "h3_education">Education</h1>
+    <p class = "p_education">I'm experienced in Java, Python, and Web Development softwares such as Node.js. I'm also currently learning about React.JS.</p>
+</div>
+</div>
+  
+
+
 
 </body>
 </html>
